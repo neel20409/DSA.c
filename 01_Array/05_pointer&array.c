@@ -22,7 +22,7 @@ int main(){
     // printf("value of first element %d\n",arr[0]);
     ptr++;
     printf("value of second element:%d",*ptr);
-        printf("address of second element%p\n",ptr);
+        printf("address of second element%p\n",ptr); 
     
     
 
