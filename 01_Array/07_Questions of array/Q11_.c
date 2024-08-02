@@ -1,29 +1,26 @@
 #include<stdio.h>
-int search(int arr[],int size,int element){
+float avg(int arr[],int size){
+    int sum =0;
     for (int i = 0; i < size; i++)
     {
-        if(arr[i]==element){
-            return i;
-        }
+        sum+=arr[i];
+
     }
-    return -1;
-    
+    float avreage= (sum/size);
+    return avreage;
 }
-int main(){
-    int arr[100],size,element;
-     printf("Enter the number of elements: ");
-    scanf("%d", &size);
-
+int main (){
+    int arr[100],size;
+    printf("Enter size of array: ");
+    scanf("%d",&size);
     
-    printf("Enter %d elements: ", size);
-    for (int i = 0; i < size; ++i) {
-        scanf("%d", &arr[i]);
+    printf("Enter %d element in array !\n",size);
+    for (int i = 0; i < size; i++)
+    {
+        scanf("%d",&arr[i]);
     }
-
     
-    printf("Enter the item you want to search for: ");
-    scanf("%d", &element);
-    int result = search(arr,size,element);
-    printf("Your desired element is on: %dth index!!",result);
-    printf("\n");
+   float ans = avg(arr,size);
+    printf("Average of arry is : %f \n",ans);
+
 }
