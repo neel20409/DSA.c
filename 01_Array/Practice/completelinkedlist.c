@@ -103,8 +103,8 @@ int main() {
     printf("Original Linked List: ");
     display(head);
 
-    head = deleteNode(head, 0 );
-    printf("After deleting node at position 0: ");
+    head = deleteNode(head, 3 );
+    printf("After deleting node at position 3: ");
     display(head);
 
     // Free the allocated memory
